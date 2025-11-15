@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 
+
 @Composable
 fun CovidApp(vm: CovidViewModel = viewModel()) {
     MaterialTheme {
@@ -17,7 +18,7 @@ fun CovidApp(vm: CovidViewModel = viewModel()) {
                 CircularProgressIndicator()
             }
         } else {
-            DashboardScreen(vm.items)
+            Dashboard(vm.items)
         }
     }
 }
